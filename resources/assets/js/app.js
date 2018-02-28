@@ -48,6 +48,7 @@ const app = new Vue({
                     chat:this.chat
     			  })
     			  .then(response => {
+                    document.getElementById('ChatAudio').play();
     			    console.log(response);
     			    this.message = ''
     			  })
